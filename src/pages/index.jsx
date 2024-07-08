@@ -7,7 +7,7 @@ import PortfolioSlider from "@/components/PortfolioSlider";
 export default function Home() {
 
   const [count , setCound] = useState(0);
-  const target = 202;
+  const target = 200;
   const incrementTime = 10;
   const incrementAmount = target / (1000 / incrementTime);
 
