@@ -34,7 +34,7 @@ const Header = () => {
         <div className="container px-4">
             <div className="flex justify-between gap-4 items-center"> 
                 <div className="w-40">
-                    <Image src={logo} />
+                    <Image src={logo} alt={logo} />
                 </div>
                 <ul className='inline-flex items-center gap-8'>
                     {
@@ -48,7 +48,7 @@ const Header = () => {
                     }
                 </ul>
                 <div className="inline-block">
-                    <Link href="tel:03161465059" className='cst_fill'>Let's Talk</Link>
+                    <Link href="tel:03161465059" className='cst_fill'>Let Us Talk</Link>
                 </div>
             </div>
         </div>

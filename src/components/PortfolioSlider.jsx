@@ -1,8 +1,8 @@
+import React from 'react'
+import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import React from 'react'
 
 const PortfolioSlider = () => {
 
@@ -20,10 +20,7 @@ const PortfolioSlider = () => {
   return (
     <div>
        <Slider {...settings} >
-              <img src="/hammer_project.jpg" alt="" />
-              <img src="/hammer_project.jpg" alt="" />
-              <img src="/hammer_project.jpg" alt="" />
-              <img src="/hammer_project.jpg" alt="" />
+        <Image src="/hammer_project.jpg" alt={portfolios} ></Image>
             </Slider>
     </div>
   )
