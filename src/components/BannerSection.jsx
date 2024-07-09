@@ -72,7 +72,7 @@ const myConnections = [
             <section className='lg:py-36 sm:py-20 py-12 border-b border-lightblack'>
             <div className="container">
                 <div className="flex md:flex-nowrap flex-wrap md:flex-row flex-col-reverse gap-8 items-center justify-between">
-                    <ul className='flex flex-wrap items-center gap-10 sm:justify-between justify-center'>
+                    <ul className='flex flex-wrap items-center lg:gap-10 gap-7 sm:justify-between justify-center'>
                         {
                             myConnections.map((myConnect,index)=> (
                                 <li key={index}>

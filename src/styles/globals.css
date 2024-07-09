@@ -41,7 +41,7 @@ sub {
 /* Header */
 
 header li {
-    @apply after:absolute after:border-b after:bottom-0 after:border-black after:left-0 after:right-0 after:w-0 after:hover:w-full after:m-auto after:transition-all after:duration-300;
+    @apply after:absolute after:border-b after:bottom-0 after:border-black after:left-0 after:right-0 after:w-0 after:hover:w-full after:m-auto after:transition-all after:duration-300 lg:text-lightblack text-white lg:py-0 py-2;
 }
 
 /* Buttons */
@@ -73,6 +73,18 @@ header li {
     @apply border-lightblack rounded-full xl:text-70 sm:text-5xl text-4xl inline-flex items-center justify-center xl:w-105rem sm:w-20 w-16 xl:h-105rem sm:h-20 h-16 pb-1 relative sm:bottom-3 bottom-2 left-4 sm:border-6 border-4;
 }
 
+
+/* Define the animation classes */
+.slide-in {
+  /* transform: translateX(0); */
+  @apply lg:translate-x-0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-out {
+  @apply lg:translate-x-0 translate-x-full;
+  transition: transform 0.3s ease-in-out;
+}
 
 /* Responsiveness */
 
