@@ -55,39 +55,39 @@ const myConnections = [
   return (
     <>
         <section className="cst_banner_section pt-20">
-      <div className="container">
-        <h1 className="">Digital Designer <span className="cst_and">&</span><br />Fr <span className="-ml-3 w-46rem border-lightblack border-9 h-16 inline-block rounded-full"></span>nt-End Developer</h1>
-        <div className="flex items-center mt-8">
-          <div className="">
-            <h2><sup>#</sup><span id="counter">{Math.floor(count)}</span><sub>+</sub></h2>
-            <strong className="text-lg text-lightgrey font-semibold">Successful Project</strong>
-          </div>
-          <div className="max-w-4xl border-l border-lightblack ml-10 pl-10 py-1">
-            <p className="text-lg text-lightgrey">I am a <strong>Professional Digital Designer and Front-End Developer.</strong> This website contains design works that I have produced over the past few years. Find various types of design projects such as logo designs, brochure designs, product packaging designs, website designs, and many more.          </p>
-          </div>
-          {/* <a className="scroll_down" href="/#one_step_down"></a> */}
-        </div>
-      </div>
-    </section>
-    <section className='one_step_down py-16 border-b border-lightblack'>
-      <div className="container">
-        <div className="flex items-center justify-between">
-            <ul className='flex items-center gap-10 justify-between'>
-                {
-                    myConnections.map((myConnect,index)=> (
-                        <li key={index}>
-                        <Link href={myConnect.link} className='flex gap-4 items-center'>
-                            <Image src={myConnect.icon} width={18} height={18} />
-                            {myConnect.title}
-                        </Link>
-                    </li>
-                    ))
-                }
-            </ul>
-            <Button title={'Scroll Down'} link={'#one_step_down'} btnClass={'cst_bg_tran'} icon={true} down={true} />
-        </div>
-      </div>
-    </section>
+            <div className="container">
+                <h1 className="">Digital Designer <span className="cst_and">&</span><br />Fr <span className="sm:-ml-3 -ml-1 xl:w-46rem w-28 border-lightblack xl:border-9 sm:border-8 border-6 xl:h-16 sm:h-9 h-7 inline-block rounded-full cst_stylish_zero"></span>nt-End Developer</h1>
+                <div className="sm:flex items-center mt-8">
+                <div className="sm:mb-0 mb-4">
+                    <h2><sup>#</sup><span id="counter">{Math.floor(count)}</span><sub>+</sub></h2>
+                    <strong className="xl:text-lg text=base text-lightgrey font-semibold">Successful Project</strong>
+                </div>
+                <div className="xl:max-w-4xl lg:max-w-3xl sm:border-l border-black lg:ml-10 lg:pl-10 sm:ml-6 sm:pl-6 py-1">
+                    <p className="xl:text-lg text=base text-lightgrey sm:text-start text-justify">I am a <strong>Professional Digital Designer and Front-End Developer.</strong> This website contains design works that I have produced over the past few years. Find various types of design projects such as logo designs, brochure designs, product packaging designs, website designs, and many more.          </p>
+                </div>
+                {/* <a className="scroll_down" href="/#one_step_down"></a> */}
+                </div>
+            </div>
+        </section>
+            <section className='lg:py-36 sm:py-20 py-12 border-b border-lightblack'>
+            <div className="container">
+                <div className="flex md:flex-nowrap flex-wrap md:flex-row flex-col-reverse gap-8 items-center justify-between">
+                    <ul className='flex flex-wrap items-center gap-10 sm:justify-between justify-center'>
+                        {
+                            myConnections.map((myConnect,index)=> (
+                                <li key={index}>
+                                <Link href={myConnect.link} className='flex gap-4 items-center uppercase'>
+                                    <Image src={myConnect.icon} width={18} height={18} />
+                                    {myConnect.title}
+                                </Link>
+                            </li>
+                            ))
+                        }
+                    </ul>
+                    <Button title={'Scroll Down'} link={'#one_step_down'} btnClass={'cst_bg_tran'} icon={true} down={true} />
+                </div>
+            </div>
+            </section>
     </>
   )
 }

@@ -20,6 +20,7 @@ module.exports = {
       fontSize: {
         "70": '4.375rem',
         "125": '7.813rem',
+        "112": '7rem',
       },
       width: {
         '105rem': '6.563rem',
@@ -31,6 +32,9 @@ module.exports = {
       borderWidth: {
         '9': '12px',
         '6': '6px',
+      },
+      maxWidth: {
+        '1248': '78rem',
       }
     },
     
