@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Plus Jakarta Sans';
     background-image: url(../../public/bodybg.jpg);
@@ -43,12 +47,25 @@ header li {
 
 /* Buttons */
 
-.cst_fill {
-    @apply border-black border px-5 py-2.5 rounded-full bg-purple hover:bg-black hover:text-white transition-all ease-out duration-300 text-sm font-medium tracking-widest uppercase inline-block;
+.btn {
+  @apply px-6 py-2.5 transition-all ease-out duration-300 text-sm font-medium tracking-widest uppercase inline-flex items-center border rounded-full;
 }
 
-.cst_fill:hover{
+.cst_fill {
+    @apply border-black bg-purple hover:bg-black hover:text-white;
+}
+
+.btn:hover{
   @apply translate-x-1.5;
+}
+
+.btn:hover img {
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
+
+.cst_bg_tran {
+  @apply border-black bg-transparent hover:bg-black hover:text-white;
 }
 
 /* Banner Section */
@@ -57,38 +74,24 @@ header li {
     @apply border-lightblack rounded-full text-70 inline-flex items-center justify-center w-105rem h-105rem pb-1 relative bottom-3 left-4 border-6;
 }
 
+.scroll_down {
+    @apply w-9 h-16 border-2 border-lightblack rounded-3xl relative m-auto cursor-pointer pointer-events-auto block;
+}
 
-.mouse {
-    width: 50px;
-    height: 90px;
-    border: 3px solid #333;
-    border-radius: 60px;
-    position: relative;
+.scroll_down::before {
+  animation: wheel 2s infinite;
+  -webkit-animation: wheel 2s infinite;
+  @apply w-3 h-3 absolute top-3 left-1/2 bg-lightblack rounded-full opacity-100 content-[''] -translate-x-1/2;
+}
+
+@keyframes wheel {
+  to {
+    @apply opacity-0 top-8 ;
+
   }
-  .mouse::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    border-radius: 50%;
-    opacity: 1;
-    animation: wheel 2s infinite;
-    -webkit-animation: wheel 2s infinite;
+}
+@-webkit-keyframes wheel {
+  to {
+    @apply opacity-0 top-14 ;
   }
-  
-  @keyframes wheel {
-    to {
-      opacity: 0;
-      top: 60px;
-    }
-  }
-  @-webkit-keyframes wheel {
-    to {
-      opacity: 0;
-      top: 60px;
-    }
-  }
+}

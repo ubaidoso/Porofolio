@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Button from './Button'
 import logo from "../../public/logo.png"
 
 const menu =  [
@@ -28,6 +28,7 @@ const menu =  [
 
 ]
 
+
 const Header = () => {
   return (
     <header className='py-4 border-b-2 border-gray-100 font-'>
@@ -48,7 +49,7 @@ const Header = () => {
                     }
                 </ul>
                 <div className="inline-block">
-                    <Link href="tel:03161465059" className='cst_fill'>Let Us Talk</Link>
+                    <Button title={'Let`s Talk'} link={'tel:03161465059'} btnClass={'cst_fill'} />
                 </div>
             </div>
         </div>
