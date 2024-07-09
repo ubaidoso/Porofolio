@@ -54,7 +54,7 @@ const myConnections = [
 
   return (
     <>
-        <section className="cst_banner_section pt-20">
+        <section className="cst_banner_section pt-12">
             <div className="container">
                 <h1 className="">Digital Designer <span className="cst_and">&</span><br />Fr <span className="sm:-ml-3 -ml-1 xl:w-46rem w-28 border-lightblack xl:border-9 sm:border-8 border-6 xl:h-16 sm:h-9 h-7 inline-block rounded-full cst_stylish_zero"></span>nt-End Developer</h1>
                 <div className="sm:flex items-center mt-8">
@@ -65,7 +65,6 @@ const myConnections = [
                 <div className="xl:max-w-4xl lg:max-w-3xl sm:border-l border-black lg:ml-10 lg:pl-10 sm:ml-6 sm:pl-6 py-1">
                     <p className="xl:text-lg text=base text-lightgrey sm:text-start text-justify">I am a <strong>Professional Digital Designer and Front-End Developer.</strong> This website contains design works that I have produced over the past few years. Find various types of design projects such as logo designs, brochure designs, product packaging designs, website designs, and many more.          </p>
                 </div>
-                {/* <a className="scroll_down" href="/#one_step_down"></a> */}
                 </div>
             </div>
         </section>

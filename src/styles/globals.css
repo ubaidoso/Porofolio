@@ -86,6 +86,12 @@ header li {
   transition: transform 0.3s ease-in-out;
 }
 
+/* About Section */
+
+.cst_about_section img {
+  filter: brightness(100%) contrast(100%) saturate(10%) blur(0px) hue-rotate(250deg);
+}
+
 /* Responsiveness */
 
 @media(max-width:1279px) {
