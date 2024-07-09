@@ -37,7 +37,7 @@ const Header = () => {
                 <div className="w-40">
                     <Image src={logo} alt={logo} />
                 </div>
-                <ul className='inline-flex items-center gap-8'>
+                <ul className='lg:inline-flex md:hidden items-center gap-8'>
                     {
                         menu.map((menus,index) => (
                             <li key={index} className='relative'>

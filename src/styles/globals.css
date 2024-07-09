@@ -100,7 +100,7 @@ header li {
 @media(max-width:480px) {
   h1 {
     font-size: 2.3rem;
-    line-height: 55px !important;
+    line-height: 50px !important;
   }
 
   .cst_and {
