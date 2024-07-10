@@ -9,7 +9,8 @@ scroll-behavior: smooth;
 body {
   font-family: 'Plus Jakarta Sans';
   background-image: url(../../public/bodybg.jpg);
-  @apply transition-all ease-out duration-300 bg-cover bg-center bg-no-repeat;
+  background-size: 50% auto;
+  @apply transition-all ease-out duration-300  bg-center bg-repeat;
 }
 
 /* Page Layout */
