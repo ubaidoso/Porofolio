@@ -55,7 +55,7 @@ const Header = () => {
                 </div>
                 <div className={`cst_menu lg:relative fixed top-0 right-0 lg:bg-transparent lg:w-auto lg:h-auto bg-lightblack w-72 h-screen z-10 p-6 ${menuToggle ? 'slide-in' : 'slide-out'}`}>
                         <button onClick={handleCloseMenu} className="lg:hidden block ml-auto mb-10">
-                            <Image src={Close} width={20} height={20} />
+                            <Image src={Close} width={20} height={20} alt={Close} />
                         </button>
                     <ul className='lg:inline-flex items-center gap-8 '>
                         {
@@ -73,7 +73,7 @@ const Header = () => {
                     <Button title={'Let`s Talk'} link={'tel:03161465059'} btnClass={'cst_fill'} />
                 </div>
                 <button className='lg:hidden' onClick={handleToggleMenu}>
-                    <Image src={ToggleBar} width={30} height={30} />
+                    <Image src={ToggleBar} width={30} height={30} alt={ToggleBar} />
                 </button>
             </div>
         </div>

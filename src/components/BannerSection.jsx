@@ -76,7 +76,7 @@ const myConnections = [
                             myConnections.map((myConnect,index)=> (
                                 <li key={index}>
                                 <Link href={myConnect.link} className='flex gap-4 items-center uppercase'>
-                                    <Image src={myConnect.icon} width={18} height={18} />
+                                    <Image src={myConnect.icon} width={18} height={18} alt={myConnect.icon}  />
                                     {myConnect.title}
                                 </Link>
                             </li>
