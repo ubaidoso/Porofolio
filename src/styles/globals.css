@@ -45,6 +45,16 @@ header li {
   @apply after:absolute after:border-b after:bottom-0 after:border-black after:left-0 after:right-0 after:w-0 after:hover:w-full after:m-auto after:transition-all after:duration-300 lg:text-lightblack text-white lg:py-0 py-2;
 }
 
+.slide-in {
+  @apply lg:translate-x-0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-out {
+  @apply lg:translate-x-0 translate-x-full;
+  transition: transform 0.3s ease-in-out;
+}
+
 /* Buttons */
 
 .btn {
@@ -74,18 +84,6 @@ header li {
   @apply border-lightblack rounded-full xl:text-70 sm:text-5xl text-4xl inline-flex items-center justify-center xl:w-105rem sm:w-20 w-16 xl:h-105rem sm:h-20 h-16 pb-1 relative sm:bottom-3 bottom-2 left-4 sm:border-6 border-4;
 }
 
-
-/* Define the animation classes */
-.slide-in {
-  @apply lg:translate-x-0;
-  transition: transform 0.3s ease-in-out;
-}
-
-.slide-out {
-  @apply lg:translate-x-0 translate-x-full;
-  transition: transform 0.3s ease-in-out;
-}
-
 /* About Section */
 
 .cst_about_section img {
@@ -96,49 +94,49 @@ header li {
 /* Responsiveness */
 
 @media(max-width:1279px) {
-h1 {
-  line-height: 100px !important;
-}
+  h1 {
+    line-height: 100px !important;
+  }
 
 }
 
 @media(max-width:1023px) {
-h1 {
-  line-height: 90px !important;
-}
-
+  h1 {
+    line-height: 90px !important;
+  }
+  
 }
 
 @media(max-width:639px) {
-h1 {
-  line-height: 65px !important;
-}
+  h1 {
+    line-height: 65px !important;
+  }
 
-.bg-linear-gradient {
-  background-image: linear-gradient(315deg, #785CFF00 45%, #d3caff 0%);
-}
+  .bg-linear-gradient {
+    background-image: linear-gradient(315deg, #785CFF00 45%, #d3caff 0%);
+  }
 
 }
 
 @media(max-width:480px) {
-h1 {
-  font-size: 2.3rem;
-  line-height: 50px !important;
-}
+  h1 {
+    font-size: 2.3rem;
+    line-height: 50px !important;
+  }
 
-.cst_and {
-  bottom: 3px;
-  border-width: 3px;
-  height: 3rem;
-  width: 3rem;
-  font-size: 1.5rem
-}
+  .cst_and {
+    bottom: 3px;
+    border-width: 3px;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem
+  }
 
-.cst_stylish_zero {
-  width: 4rem;
-  height: 1.2rem;
-  border-width: 3px;
-  margin-left: -1px;
-}
+  .cst_stylish_zero {
+    width: 4rem;
+    height: 1.2rem;
+    border-width: 3px;
+    margin-left: -1px;
+  }
 
 }
