@@ -1,5 +1,5 @@
 // src/pages/index.js
-import React, { useState } from 'react';
+import React from 'react';
 import Header from "@/components/Header";
 import PortfolioSlider from "@/components/PortfolioSlider";
 import BannerSection from '@/components/BannerSection';
@@ -38,11 +38,49 @@ const services = [
     title: 'React / Next js',
     detail: 'Nemo enim ipsam voluptatem quia volupta sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores.',
   },
+
+];
+
+const progressData = [
+  {  
+    label: "Programming Languages", 
+    value: 80, 
+    detail : "JavaScript, TypeScript, PHP",
+  },
+  {  
+    label: "Frontend Technologies", 
+    value: 98, 
+    detail : "HTML, CSS, Bootstrap, Tailwind CSS, Material-UI, React, Next.js, jQuery",
+  },
+  {  
+    label: "Wordpress Technologies", 
+    value: 97, 
+    detail : "Elementor, Avada, Wp-Bakery, ACF, Oxygen, Divi, Beaver",
+  },
+  { 
+    label: "Wordpress Themes/Plugins", 
+    value: 90, 
+    detail : "Custom Theme development, Theme Customization, Woocommerce Customization, Elementor widgets development",
+  },
+  { 
+    label: "Shopify", 
+    value: 86, 
+    detail : "Theme Customization, Store Functionalities",
+  },
+  {
+    label: "Webflow", 
+    value: 80, 
+    detail : "Sed ut perspiciatis unde omnis iste natus error voluptatem dolorem laudantis totamrem aperiam, eaque ipsa quae ab illo inventore veritatis quasi.",
+  },
+  {
+    label: "React", 
+    value: 70, 
+    detail : "Sed ut perspiciatis unde omnis iste natus error voluptatem dolorem laudantis totamrem aperiam, eaque ipsa quae ab illo inventore veritatis quasi.",
+  },
+
 ];
 
 export default function Home() {
-  const [progress, setProgress] = useState(50);
-
   return (
     <>
       <Header />
@@ -50,42 +88,32 @@ export default function Home() {
       <About />
       <Services serviceData={services} />
       <section>
-        <div className="container">
-          <div className="flex gap-4 justify-between">
-            <div className="detail">
+        <div className="container mx-auto py-8">
+          <div className="flex justify-between gap-8">
+            <div className="space-y-12 w-5/12 sticky top-16 self-start">
               <h2>Special Skills</h2>
-              <h3 className="font-medium text-lg">I am very open to learn new things</h3>
-              <p className="text-base font-light leading-6 text-lightblack">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa doloremque laudantium, totam aperiam eaque ipsa quae abillo inventore veritatis quasi architecto beatae vitae dicta.
-              </p>
+              <div className='space-y-3'>
+                <h3 className="font-medium text-lg">I am very open to learn new things</h3>
+                <p className="text-base font-light leading-6 text-lightblack">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa doloremque laudantium, totam aperiam eaque ipsa quae abillo inventore veritatis quasi architecto beatae vitae dicta.
+                </p>
+              </div>
             </div>
-            <div className="list">
-              <ul>
-                <li>
-                  <h3 className="font-medium text-lg">I am very open to learn new things</h3>
-                  <p className="text-base font-light leading-6 text-lightblack">
-                    Sed ut perspiciatis unde omnis iste natus error voluptatem dolorem laudantis totamrem aperiam, eaque ipsa quae ab illo inventore veritatis quasi.
-                  </p>
-                  <div className="p-4">
-                    <h1 className="text-2xl mb-4">React Progress Bar with Tailwind CSS</h1>
-                    <ProgressBar progress={progress} />
-                    <div className="mt-4">
-                      <button
-                        className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
-                        onClick={() => setProgress(progress + 10)}
-                      >
-                        Increase
-                      </button>
-                      <button
-                        className="bg-red-500 text-white px-4 py-2 rounded"
-                        onClick={() => setProgress(progress - 10)}
-                      >
-                        Decrease
-                      </button>
+            <div className="w-6/12">
+              <div className="space-y-14">
+                {progressData.map((progressItem, index) => (
+                  <div key={index} className="space-y-8">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <h2 className="font-semibold text-2xl">{progressItem.label}</h2>
+                        <h3 className="font-semibold text-2xl">{progressItem.value}%</h3>
+                      </div>
+                      <p className="text-base font-light leading-6 text-lightblack">{progressItem.detail}</p>
                     </div>
+                    <ProgressBar progress={progressItem.value} />
                   </div>
-                </li>
-              </ul>
+                ))}
+              </div>
             </div>
           </div>
         </div>
