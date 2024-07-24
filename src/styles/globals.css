@@ -24,11 +24,11 @@ body {
 h1 {
   line-height: 160px !important;
   letter-spacing: -0.045em; 
-  @apply text-lightblack font-medium 2xl:text-112 xl:text-112 sm:text-7xl text-5xl;
+  @apply text-lightblack font-medium 2xl:text-112 xl:text-112 sm:text-7xl text-5xl; 
 }
 
 h2 {
-  @apply xl:text-6xl sm:text-5xl text-4xl font-semibold text-lightblack ;
+  @apply xl:text-6xl md:text-5xl text-4xl font-semibold text-lightblack ;
 }
 
 sup {
@@ -90,6 +90,8 @@ header li {
   filter: brightness(100%) contrast(100%) saturate(10%) blur(0px) hue-rotate(250deg);
   @apply sm:max-w-96 max-w-52;
 }
+
+/*Special Skills*/
 
 .cst_progress {
   @apply bg-lightblack h-3px rounded-full transition-all duration-[4000ms] ease-in-out relative after:absolute after:rounded-full after:text-black after:w-2 after:h-2 after:bg-black after:right-2 before:absolute before:rounded-full before:w-6 before:h-6 before:text-black before:right-0 before:bg-white;
