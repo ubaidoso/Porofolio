@@ -87,7 +87,7 @@ export default function Home() {
       <BannerSection />
       <About />
       <Services serviceData={services} />
-      <section>
+      <section className='mt-24'>
         <div className="container mx-auto py-8">
           <div className="flex justify-between gap-8">
             <div className="space-y-12 w-5/12 sticky top-16 self-start">

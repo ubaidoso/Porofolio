@@ -56,7 +56,7 @@ const myConnections = [
     <>
         <section className="cst_banner_section pt-12">
             <div className="container">
-                <h1 className="">Digital Designer <span className="cst_and">&</span><br />Fr <span className="sm:-ml-3 -ml-1 xl:w-46rem w-28 border-lightblack xl:border-9 sm:border-8 border-6 xl:h-16 sm:h-9 h-7 inline-block rounded-full cst_stylish_zero"></span>nt-End Developer</h1>
+                <h1>Digital Designer <span className="cst_and">&</span><br />Fr <span className="sm:-ml-3 -ml-1 xl:w-46rem w-28 border-lightblack xl:border-9 sm:border-8 border-6 xl:h-16 sm:h-9 h-7 inline-block rounded-full cst_stylish_zero"></span>nt-End Developer</h1>
                 <div className="sm:flex items-center mt-8">
                 <div className="sm:mb-0 mb-4">
                     <h2><sup>#</sup><span id="counter">{Math.floor(count)}</span><sub>+</sub></h2>
