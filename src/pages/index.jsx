@@ -128,7 +128,7 @@ export default function Home() {
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <h2 className="font-semibold md:text-2xl text-lg">{progressItem.label}</h2>
-                        <h3 className="font-semibold md:text-2xl text-lg">{progressItem.value}%</h3>
+                        <h3 className="font-semibold md:text-2xl text-lg ">{progressItem.value}%</h3>
                       </div>
                       <p className="text-base font-light leading-6 text-lightblack">{progressItem.detail}</p>
                     </div>
