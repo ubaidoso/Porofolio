@@ -140,7 +140,7 @@ export default function Home() {
             <div className="space-y-12 md:w-6/12 w-5/12 sticky top-16 self-start">
               <h2>My Experiences</h2>
               <div className='space-y-3'>
-                <h3 className="font-medium text-lg">Let's work together, I'm open for part time / freelance</h3>
+                <h3 className="font-medium text-lg">Lets work together, I am open for part time / freelance</h3>
                 <p className="text-base font-light leading-6 text-lightblack">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa doloremque laudantium, totam aperiam eaque ipsa quae abillo inventore veritatis quasi architecto beatae vitae dicta.
                 </p>
