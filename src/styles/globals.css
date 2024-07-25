@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  @apply xl:text-6xl md:text-5xl text-4xl font-semibold text-lightblack ;
+  @apply xl:text-6xl lg:text-5xl text-4xl font-semibold text-lightblack ;
 }
 
 sup {
