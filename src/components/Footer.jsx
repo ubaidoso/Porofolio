@@ -31,20 +31,20 @@ const Footer = () => {
     <footer className='bg-lightblack pt-20 pb-8'>
         <div className="container border-b border-lightgrey pb-12">
             <div className="flex items-center justify-between gap-4">
-                <div className="div">
-                <p className='uppercase text-sm font-medium text-white'>HAVE PROJECT IN MIND ?</p>
+                <div className="space-y-2">
+                    <p className='uppercase sm:text-sm text-xs font-medium text-white'>HAVE PROJECT IN MIND ?</p>
                     <h1 className='text-white'>Lets Talk !</h1>
                 </div>
                 <div className="flex items-center gap-4">
-                    <p className='uppercase text-sm font-medium text-white w-64'>IT`S TIME TO START MAKING SOMETHING AMAZING TOGETHER.</p>
-                    <div className="bg-purple flex items-center justify-center w-36 h-36 rounded-full px-8 hover:rotate-12 hover:bg-white hover:scale-90 transition-all duration-300">
+                    <p className='uppercase text-sm font-medium text-white w-64 md:inline-block hidden'>IT`S TIME TO START MAKING SOMETHING AMAZING TOGETHER.</p>
+                    <div className="bg-purple flex items-center justify-center lg:w-36 lg:h-36 w-28 h-28 rounded-full px-8 hover:rotate-12 hover:bg-white hover:scale-90 transition-all duration-300">
                         <p className='uppercase text-sm font-semibold text-center tracking-widest'>Start A Project</p>
                     </div>
                 </div>
             </div>
         </div>
         <div className="container py-8">
-            <div className="flex justify-between">
+            <div className="flex flex-wrap gap-8 justify-between">
                 {
                     footerData.map((footeritem,index)=> (
                         <div key={index}>
