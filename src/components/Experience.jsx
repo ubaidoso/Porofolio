@@ -4,10 +4,10 @@ import download from '../../public/download.svg'
 
 const Experience = ({experienceData}) => {
   return (
-    <section className='my-24'>
-        <div className="container mx-auto py-8">
-        <div className="flex justify-between gap-8">
-            <div className="md:w-6/12 w-6/12">
+    <section className='sm:my-24'>
+        <div className="container mx-auto sm:py-8">
+        <div className="flex flex-wrap sm:flex-row flex-col-reverse justify-between sm:gap-8 gap-16">
+            <div className="md:w-6/12 sm:w-6/12 w-full">
             <div className="space-y-8">
                 {experienceData.map((experienceItem, index) => (
                 <div key={index} className="space-y-8 border-b border-black pb-8">
@@ -22,7 +22,7 @@ const Experience = ({experienceData}) => {
                 ))}
             </div>
             </div>
-            <div className="space-y-8 md:w-5/12 w-5/12 sticky top-16 self-start">
+            <div className="space-y-8 md:w-5/12 sm:w-5/12 sm:sticky sm:top-16 sm:self-start">
             <h2>My Experiences</h2>
             <div className='space-y-3'>
                 <h3 className="font-medium text-lg">Lets work together, I am open for part time / freelance</h3>

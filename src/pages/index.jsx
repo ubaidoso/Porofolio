@@ -112,10 +112,10 @@ export default function Home() {
       <About />
       <Services serviceData={services} />
       {/* Technologies Skill */}
-      <section className='my-24'>
+      <section className='sm:my-24 my-12'>
         <div className="container mx-auto py-8">
-          <div className="flex justify-between gap-8">
-            <div className="space-y-12 w-5/12 sticky top-16 self-start">
+          <div className="flex flex-wrap justify-between gap-8">
+            <div className="space-y-12 sm:first:w-5/12 sm:sticky sm:top-16 sm:self-start">
               <h2>Special Skills</h2>
               <div className='space-y-3'>
                 <h3 className="font-medium text-lg">I am very open to learn new things</h3>
@@ -124,8 +124,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="w-6/12">
-              <div className="space-y-20">
+            <div className="sm:w-6/12">
+              <div className="sm:space-y-20 space-y-12">
                 {skillsTechnology.map((skillItem, index) => (
                   <div key={index} className="space-y-8">
                     <div className="space-y-3">

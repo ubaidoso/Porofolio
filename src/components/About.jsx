@@ -22,24 +22,24 @@ const About = () => {
     }, [count, incrementAmount, incrementTime, target]);
 
   return (
-    <section className='cst_about_section py-32'>
+    <section className='cst_about_section sm:py-32 py-16'>
     <div className="container">
       <div className="flex lg:flex-nowrap flex-wrap lg:flex-row flex-col-reverse lg:items-end lg:gap-4 gap-16 justify-between">
         <div className='lg:max-w-2xl'>
-        <span className='text-sm uppercase font-medium text-lightblack mb-12 block'>GET IN TOUCH WITH ME</span>
-        <p className='font-medium xl:text-28 xl:leading-normal lg:text-xl lg:leading-8 text-2xl leading-10'>I am very interested & passionate about everything related to digital & web design. Over 15 years of experience in the design industry I have worked a lot with agencies and passionate people who want to solve problems through beautiful design.</p>
+        <span className='text-sm uppercase font-medium text-lightblack sm:mb-12 mb-8 block'>GET IN TOUCH WITH ME</span>
+        <p className='font-medium xl:text-28 xl:leading-normal lg:text-xl lg:leading-8 ms:text-2xl text-xl text-justify leading-10'>I am very interested & passionate about everything related to digital & web design. Over 15 years of experience in the design industry I have worked a lot with agencies and passionate people who want to solve problems through beautiful design.</p>
         <div className='flex gap-4 justify-between border-t border-black pt-12 mt-12'>
             <div className="sm:mb-0 mb-4">
                 <h2><span id="counter">{Math.floor(count)}</span><sub>+</sub></h2>
-                <strong className="xl:text-lg text=base text-lightgrey font-semibold">Satisfied Clients</strong>
+                <strong className="xl:text-lg text=base text-lightgrey font-semibold mt-2 inline-block">Satisfied Clients</strong>
             </div>
             <div className="sm:mb-0 mb-4">
                 <h2><span id="counter">{Math.floor(count)}</span><sub>+</sub></h2>
-                <strong className="xl:text-lg text=base text-lightgrey font-semibold">Years Experience</strong>
+                <strong className="xl:text-lg text=base text-lightgrey font-semibold mt-2 inline-block">Years Experience</strong>
             </div>
             <div className="sm:mb-0 mb-4">
                 <h2><span id="counter">{Math.floor(count)}</span><sub>+</sub></h2>
-                <strong className="xl:text-lg text=base text-lightgrey font-semibold">Work Collaboration</strong>
+                <strong className="xl:text-lg text=base text-lightgrey font-semibold mt-2 inline-block">Work Collaboration</strong>
             </div>
         </div>
         </div>
