@@ -1,29 +1,19 @@
-import React from 'react'
-import Image from "next/image";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
 
-const PortfolioSlider = () => {
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    arrows:false,
-    autoplay: true,
-  };
-
-
+const PortfolioSlider = ({ portfolio }) => {
   return (
-    <div>
-       <Slider {...settings} >
-        <Image src="/hammer_project.jpg" alt={portfolios} ></Image>
-            </Slider>
-    </div>
-  )
-}
+    <>
+        {
+          portfolio.map((portfolios, index) => (
+            <article>
+              <div className="bg-cover bg-center bg-no-repeat h-screen bg-fixed" key={index} style={{ backgroundImage: `url(${portfolios.bgImage.src})` }}>
+                <h1>ubaid</h1>
+              </div>
+            </article>
+          ))
+        }
+    </>
+  );
+};
 
-export default PortfolioSlider
+export default PortfolioSlider;

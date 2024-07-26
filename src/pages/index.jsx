@@ -13,6 +13,8 @@ import ThemeCustomize from '../../public/icon_num_05_f.svg';
 import Webflow from '../../public/icon_num_02_f.svg';
 import ReactNext from '../../public/icon_num_08_f.svg';
 import CustomTheme from '../../public/icon_num_07_f.svg';
+import portfolio1 from '../../public/portfolio-1.jpg';
+import portfolio2 from '../../public/portfolio-2.jpg';
 
 const services = [
   {
@@ -105,6 +107,24 @@ const experience = [
   },
 ]
 
+const portfolioData = [
+  {
+    thumbnail:"",
+    title:"",
+    link:"",
+    tools:"",
+    bgImage:portfolio1,
+  },
+
+  {
+    thumbnail:"",
+    title:"",
+    link:"",
+    tools:"",
+    bgImage:portfolio2,
+  }
+]
+
 export default function Home() {
   return (
     <>
@@ -143,6 +163,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      {/* Portfolio */}
+      <section>
+        <PortfolioSlider portfolio={portfolioData} /> 
       </section>
       {/* My Experiences */}
       <Experience experienceData={experience} />
