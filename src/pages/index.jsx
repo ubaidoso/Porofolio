@@ -122,7 +122,14 @@ const portfolioData = [
     link:"",
     tools:"",
     bgImage:portfolio2,
-  }
+  },
+  {
+    thumbnail:"",
+    title:"",
+    link:"",
+    tools:"",
+    bgImage:portfolio2,
+  },
 ]
 
 export default function Home() {
