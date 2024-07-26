@@ -17,6 +17,7 @@ module.exports = {
         'purple': '#d3caff',
         'lightblack': '#262729',
         'lightgrey' : '#54575d',
+      
       },
       fontSize: {
         "70": '4.375rem',
