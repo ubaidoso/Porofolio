@@ -132,7 +132,18 @@ const portfolioData = [
   },
 ]
 
+const counter = [
+  {
+    count: "",
+    title: "",
+  },
+]
+
 export default function Home() {
+
+
+
+
   return (
     <>
       <Header />

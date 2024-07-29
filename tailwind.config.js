@@ -17,6 +17,7 @@ module.exports = {
         'purple': '#d3caff',
         'lightblack': '#262729',
         'lightgrey' : '#54575d',
+        'dullwhite' : '#dddddd',
       
       },
       fontSize: {
@@ -24,10 +25,12 @@ module.exports = {
         "125": '7.813rem',
         "112": '7rem',
         "28": '1.75rem',
+        "80": '5rem',
       },
       width: {
         '105rem': '6.563rem',
         '46rem': '10.5rem',
+        '600px': '37.5rem',
       },
       height: {
         '105rem': '6.563rem',

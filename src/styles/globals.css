@@ -63,7 +63,7 @@ header li {
 /* Buttons */
 
 .btn {
-  @apply px-6 py-2.5 transition-all ease-out duration-300 text-sm font-medium tracking-widest uppercase inline-flex items-center border rounded-full;
+  @apply relative px-6 py-2.5 transition-all ease-out duration-300 text-sm font-medium tracking-widest uppercase inline-flex items-center border rounded-full; 
 }
 
 .btn:hover{
@@ -119,7 +119,6 @@ header li {
   filter: brightness(120%) contrast(109%) saturate(0%) blur(0px) hue-rotate(0deg);
 }
 
-
 .sliderContainer {
   overflow: hidden;
   position: relative;
@@ -147,8 +146,44 @@ header li {
 }
 
 
+/* Loader */
 
+.loader {
+  @apply absolute top-0 left-0 z-50 h-full w-full flex justify-center items-center flex-col;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
 
+#loader_svg {
+  @apply stroke-2 stroke-dullwhite sm:w-52 w-48 h-auto;
+  fill-opacity: 0;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.loader_footer {
+  @apply stroke-2 overflow-hidden;
+}
+
+.loader_footer svg {
+  @apply sm:w-600px w-auto capitalize stroke-2 stroke-dullwhite;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+.loader_footer text {
+  font-family: 'Bilbo Swash Caps';
+  letter-spacing: 20px;
+  @apply sm:text-80 text-7xl;
+}
 
 /* Responsiveness */
 

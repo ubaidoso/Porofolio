@@ -3,7 +3,6 @@ import React from 'react';
 
 const PortfolioSlider = ({ portfolio }) => {
 
-
   return (
     <div>
       {
