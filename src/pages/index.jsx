@@ -96,20 +96,16 @@ const experience = [
     designation:'Senior Web Developer',
   },
   {
-    company: 'OSO Software Outstanding',
+    company: 'OSO Software Outstanding, LLC',
     duration:'2019 - 2023',
-    designation:'Wordpress Developer',
+    designation:'WordPress Developer',
   },
   {
     company: 'Digitech Outsourcing Solution, LLC',
     duration:'2015 - 2016',
     designation:'Data Entry Operator',
   },
-  {
-    company: 'Home Tutor',
-    duration:'2014 - 2016',
-    designation:'Home Tutor',
-  },
+
 ]
 
 const portfolioData = [

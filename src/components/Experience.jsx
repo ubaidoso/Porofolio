@@ -30,7 +30,7 @@ const Experience = ({experienceData}) => {
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa doloremque laudantium, totam aperiam eaque ipsa quae abillo inventore veritatis quasi architecto beatae vitae dicta.
                 </p>
             </div>
-            <a href='/Ubaid-Tahir-Resume.pdf' className='cst_fill btn flex gap-2' download>Download CV <Image src={download} width={20} /> </a>
+            <a href='/Ubaid-Updated-CV-2026' className='cst_fill btn flex gap-2' download>Download CV <Image src={download} width={20} /> </a>
             </div>
         </div>
         </div>
