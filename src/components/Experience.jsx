@@ -30,14 +30,7 @@ const Experience = ({experienceData}) => {
                                 </h3>
                             </div>
 
-                            {/* Responsibilities */}
-                            {experienceItem.responsibilities && (
-                                <ul className="space-y-2 list-disc pl-5 text-sm leading-relaxed text-lightblack">
-                                {experienceItem.responsibilities.map((item, i) => (
-                                    <li key={i}>{item}</li>
-                                ))}
-                                </ul>
-                            )}
+    
                         </div>
                     ))}
                 </div>
