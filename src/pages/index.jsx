@@ -83,7 +83,7 @@ const skillsTechnology = [
   {
     label: "Development Tools", 
     detail : "Git, GitHub, cPanel, SiteGround, Deployment, Version Control, Debugging & Troubleshooting",
-    // value: "10",
+    value: "10",
   },
 
 ];
@@ -185,7 +185,7 @@ export default function Home() {
                       </div>
                       <p className="text-base font-light leading-6 text-lightblack">{skillItem.detail}</p>
                     </div>
-                    <ProgressBar />
+                    <ProgressBar progress={skillItem.value} />
                   </div>
                 ))}
               </div>
