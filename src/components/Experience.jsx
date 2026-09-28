@@ -32,7 +32,7 @@ const Experience = ({experienceData}) => {
 
                             {/* Responsibilities */}
                             {experienceItem.responsibilities && (
-                                <ul className="space-y-2 list-disc pl-5 text-sm leading-relaxed text-lightblack">
+                                <ul className="space-y-2 list-disc pl-5 text-base leading-relaxed text-lightblack">
                                 {experienceItem.responsibilities.map((item, i) => (
                                     <li key={i}>{item}</li>
                                 ))}

@@ -175,9 +175,9 @@ export default function Home() {
               </div>
             </div>
             <div className="sm:w-6/12">
-              <div className="sm:space-y-8 space-y-12">
+              <div className="sm:space-y-8 space-y-8">
                 {skillsTechnology.map((skillItem, index) => (
-                  <div key={index} className="space-y-4">
+                  <div key={index} className="space-y-8">
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <h2 className="font-semibold md:text-2xl text-lg">{skillItem.label}</h2>
