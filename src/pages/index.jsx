@@ -52,28 +52,20 @@ const services = [
 
 const skillsTechnology = [
   {  
-    label: "WordPress", 
-    detail : "Theme Development, Plugin Development, WooCommerce, Elementor, ACF, WPBakery, Divi, Custom Functionality",
+    label: "Web Development", 
+    detail : "WordPress, Webflow, PHP, Laravel, React, Next.js",
   },
   {  
-    label: "Shopify", 
-    detail : "Theme Customization, Liquid, Custom Sections, Store Functionality, Product & Collection Setup, App Integrations",
+    label: "E-commerce", 
+    detail : "Shopify · WooCommerce · Custom Stores",
   },
   {
-    label: "Laravel & PHP", 
-    detail : "Laravel Development, PHP, MySQL, REST APIs, Backend Development, Custom Web Applications",
-  },
-  {
-    label: "Frontend Development", 
-    detail : "HTML5, CSS3, JavaScript, jQuery, React, Next.js, Bootstrap, Tailwind CSS",
-  },
-  { 
-    label: "Webflow", 
-    detail : "Custom Web Design, CMS, Responsive Development, Interactions & Animations",
+    label: "Frontend", 
+    detail : "HTML5, CSS3, JavaScript, jQuery, Tailwind CSS, Responsive Design",
   },
   {
     label: "Integrations & APIs", 
-    detail : "REST APIs, Third-Party API Integration, Payment Gateways, CRM Integrations, Webhooks, Automation",
+    detail : "REST APIs, Third-Party API Integration, Payment Gateways, CRM, Automation",
   },
   {  
     label: "CRM & Marketing", 
