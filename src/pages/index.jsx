@@ -8,13 +8,18 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import ProgressBar from '@/components/ProgressBar';
 import Experience from '@/components/Experience';
+import GsapCompo from '@/components/Gsap';
+
 import psdToWordpress from '../../public/icon_num_01_f.svg';
 import ThemeCustomize from '../../public/icon_num_05_f.svg';
 import Webflow from '../../public/icon_num_02_f.svg';
 import ReactNext from '../../public/icon_num_08_f.svg';
 import CustomTheme from '../../public/icon_num_07_f.svg';
+
 import portfolio1 from '../../public/portfolio-1.jpg';
 import portfolio2 from '../../public/portfolio-2.jpg';
+import portfolio3 from '../../public/screenshot.png';
+import portfolio4 from '../../public/Fundrasing.jpg';
 
 const services = [
   {
@@ -128,14 +133,14 @@ const portfolioData = [
     title:"",
     link:"",
     tools:"",
-    bgImage:portfolio2,
+    bgImage:portfolio3,
   },
-]
-
-const counter = [
   {
-    count: "",
-    title: "",
+    thumbnail:"",
+    title:"",
+    link:"",
+    tools:"",
+    bgImage:portfolio4,
   },
 ]
 
@@ -186,8 +191,14 @@ export default function Home() {
       <section>
         <PortfolioSlider portfolio={portfolioData} /> 
       </section>
+
+      {/* <section>
+        <GsapCompo />
+      </section> */}
+
       {/* My Experiences */}
       <Experience experienceData={experience} />
+      
       <Footer></Footer>
     </>
   );
