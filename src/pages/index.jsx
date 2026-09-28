@@ -93,19 +93,29 @@ const experience = [
     company: 'Perfect Web Solutions Pvt. Ltd.',
     duration: '2023 - Present',
     designation: 'Senior Web Developer',
-
+    responsibilities: [
+      'Develop and maintain modern, responsive websites and web applications.',
+      'Build custom solutions using Laravel, WordPress and Shopify.',
+      'Integrate APIs, payment gateways and optimize website performance.',
+    ],
   },
   {
     company: 'OSO Software Outstanding, LLC',
     duration: '2019 - 2023',
     designation: 'WordPress Developer',
-
+    responsibilities: [
+      'Developed and customized WordPress websites, themes and plugins.',
+      'Created responsive layouts and improved website functionality.',
+    ],
   },
   {
     company: 'Digitech Outsourcing Solution, LLC',
     duration: '2015 - 2016',
     designation: 'Data Entry Operator',
-
+    responsibilities: [
+      'Managed data entry tasks and maintained accurate digital records.',
+      'Organized information and ensured data accuracy.',
+    ],
   },
 ];
 
