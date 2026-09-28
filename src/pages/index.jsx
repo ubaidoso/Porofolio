@@ -184,7 +184,7 @@ export default function Home() {
                       </div>
                       <p className="text-base font-light leading-6 text-lightblack">{skillItem.detail}</p>
                     </div>
-                    <ProgressBar progress={skillItem.value} />
+                    {/* <ProgressBar progress={skillItem.value} /> */}
                   </div>
                 ))}
               </div>
