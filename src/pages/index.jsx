@@ -52,39 +52,37 @@ const services = [
 
 const skillsTechnology = [
   {  
-    label: "Programming Languages", 
-    value: 80, 
-    detail : "JavaScript, TypeScript, PHP",
+    label: "WordPress", 
+    detail : "Theme Development, Plugin Development, WooCommerce, Elementor, ACF, WPBakery, Divi, Custom Functionality",
   },
   {  
-    label: "Frontend Technologies", 
-    value: 98, 
-    detail : "HTML, CSS, Bootstrap, Tailwind CSS, Material-UI, React, Next.js, jQuery",
+    label: "Shopify", 
+    detail : "Theme Customization, Liquid, Custom Sections, Store Functionality, Product & Collection Setup, App Integrations",
   },
-  {  
-    label: "Wordpress", 
-    value: 97, 
-    detail : "Theme development, Theme Customization, Woocommerce Customization, Elementor, Elementor widgets development, Avada, Wp-Bakery, ACF, Oxygen, Divi, Beaver",
+  {
+    label: "Laravel & PHP", 
+    detail : "Laravel Development, PHP, MySQL, REST APIs, Backend Development, Custom Web Applications",
+  },
+  {
+    label: "Frontend Development", 
+    detail : "HTML5, CSS3, JavaScript, jQuery, React, Next.js, Bootstrap, Tailwind CSS",
   },
   { 
-    label: "Shopify", 
-    value: 86, 
-    detail : "Theme Customization, Store Functionalities",
-  },
-  {
     label: "Webflow", 
-    value: 80, 
-    detail : "Sed ut perspiciatis unde omnis iste natus error voluptatem dolorem laudantis totamrem aperiam, eaque ipsa quae ab illo inventore veritatis quasi.",
+    detail : "Custom Web Design, CMS, Responsive Development, Interactions & Animations",
   },
   {
-    label: "React", 
-    value: 70, 
-    detail : "Sed ut perspiciatis unde omnis iste natus error voluptatem dolorem laudantis totamrem aperiam, eaque ipsa quae ab illo inventore veritatis quasi.",
+    label: "Integrations & APIs", 
+    detail : "REST APIs, Third-Party API Integration, Payment Gateways, CRM Integrations, Webhooks, Automation",
   },
+  {  
+    label: "CRM & Marketing", 
+    detail : "Klaviyo, HubSpot, Twilio, Email Automation, SMS Automation, Customer Data Management, Marketing Integrations",
+  },
+  
   {
-    label: "Design Platform", 
-    value: 70, 
-    detail : "Figma, PSD, Adobe XD, Invision, Etc",
+    label: "Development Tools", 
+    detail : "Git, GitHub, cPanel, SiteGround, Deployment, Version Control, Debugging & Troubleshooting",
   },
 
 ];
@@ -92,21 +90,33 @@ const skillsTechnology = [
 const experience = [
   {
     company: 'Perfect Web Solutions Pvt. Ltd.',
-    duration:'2023 - Present',
-    designation:'Senior Web Developer',
+    duration: '2023 - Present',
+    designation: 'Senior Web Developer',
+    responsibilities: [
+      'Develop and maintain modern, responsive websites and web applications.',
+      'Build custom solutions using Laravel, WordPress and Shopify.',
+      'Integrate APIs, payment gateways and optimize website performance.',
+    ],
   },
   {
     company: 'OSO Software Outstanding, LLC',
-    duration:'2019 - 2023',
-    designation:'WordPress Developer',
+    duration: '2019 - 2023',
+    designation: 'WordPress Developer',
+    responsibilities: [
+      'Developed and customized WordPress websites, themes and plugins.',
+      'Created responsive layouts and improved website functionality.',
+    ],
   },
   {
     company: 'Digitech Outsourcing Solution, LLC',
-    duration:'2015 - 2016',
-    designation:'Data Entry Operator',
+    duration: '2015 - 2016',
+    designation: 'Data Entry Operator',
+    responsibilities: [
+      'Managed data entry tasks and maintained accurate digital records.',
+      'Organized information and ensured data accuracy.',
+    ],
   },
-
-]
+];
 
 const portfolioData = [
   {
@@ -156,11 +166,10 @@ export default function Home() {
         <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-between gap-8">
             <div className="space-y-12 sm:first:w-5/12 sm:sticky sm:top-16 sm:self-start">
-              <h2>Special Skills</h2>
+              <h2>Technical Skills</h2>
               <div className='space-y-3'>
-                <h3 className="font-medium text-lg">I am very open to learn new things</h3>
                 <p className="text-base font-light leading-6 text-lightblack">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa doloremque laudantium, totam aperiam eaque ipsa quae abillo inventore veritatis quasi architecto beatae vitae dicta.
+                  I build modern, responsive, and scalable digital experiences, specializing in WordPress, Shopify, Laravel, and modern frontend development. My experience also includes eCommerce, custom functionality, API integrations, CRM platforms, and website deployment.
                 </p>
               </div>
             </div>
@@ -171,7 +180,7 @@ export default function Home() {
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <h2 className="font-semibold md:text-2xl text-lg">{skillItem.label}</h2>
-                        <h3 className="font-semibold md:text-2xl text-lg">{skillItem.value}%</h3>
+                        {/* <h3 className="font-semibold md:text-2xl text-lg">{skillItem.value}%</h3> */}
                       </div>
                       <p className="text-base font-light leading-6 text-lightblack">{skillItem.detail}</p>
                     </div>
