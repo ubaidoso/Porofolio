@@ -175,7 +175,7 @@ export default function Home() {
               </div>
             </div>
             <div className="sm:w-6/12">
-              <div className="sm:space-y-20 space-y-12">
+              <div className="sm:space-y-16 space-y-12">
                 {skillsTechnology.map((skillItem, index) => (
                   <div key={index} className="space-y-4">
                     <div className="space-y-3">
@@ -185,7 +185,7 @@ export default function Home() {
                       </div>
                       <p className="text-base font-light leading-6 text-lightblack">{skillItem.detail}</p>
                     </div>
-                    {/* <ProgressBar progress={skillItem.value} /> */}
+                    <ProgressBar />
                   </div>
                 ))}
               </div>
