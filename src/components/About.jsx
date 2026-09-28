@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import AboutImage from '../../public/ubaid.png';
+import AboutImage from '../../public/ubaid-about.png';
 import Image from 'next/image';
 import Counter from './Counter';
 
