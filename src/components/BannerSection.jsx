@@ -36,7 +36,7 @@ const BannerSection = () => {
                     <h1>I Build Websites <span className="cst_and">&</span><br />Web Applications That Work.</h1>
                     <div className="mt-8">
                         <p className="xl:text-lg text-base text-lightgrey sm:text-start text-justify">
-                            I am a <strong> Web Developer specializing </strong> in WordPress, Shopify, Laravel, Next.js, WooCommerce, and Webflow. I build responsive websites, eCommerce stores, custom web applications, and business integrations that are designed to be reliable, scalable, and easy to use. Whether you're looking to launch a new website, improve an existing platform, or build a custom solution, I focus on turning ideas and business requirements into practical digital experiences.
+                            I&apos;m a <strong> Web Developer specializing </strong> in WordPress, Shopify, Laravel, Next.js, WooCommerce, and Webflow. I build responsive websites, eCommerce stores, custom web applications, and business integrations that are designed to be reliable, scalable, and easy to use. Whether you&apos;re looking to launch a new website, improve an existing platform, or build a custom solution, I focus on turning ideas and business requirements into practical digital experiences.
                         </p>
                     </div>
                 </div>
