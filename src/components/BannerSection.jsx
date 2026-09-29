@@ -26,9 +26,6 @@ const myConnections = [
     },
 ];
 
-const counterData = [
-  { targetCount: 200, title: "Satisfied Clients" },
-];
 
 const BannerSection = () => {
 
@@ -36,14 +33,11 @@ const BannerSection = () => {
         <>
             <section className="cst_banner_section pt-12">
                 <div className="container">
-                    <h1>Digital Designer <span className="cst_and">&</span><br />Fr <span className="sm:-ml-3 -ml-1 xl:w-46rem w-28 border-lightblack xl:border-9 sm:border-8 border-6 xl:h-16 sm:h-9 h-7 inline-block rounded-full cst_stylish_zero"></span>nt-End Developer</h1>
-                    <div className="sm:flex items-center mt-8">
-                        {counterData.map((counter, index) => (
-                            <Counter key={index} targetCount={counter.targetCount} title={counter.title} />
-                        ))}
+                    <h1>I Build Websites <span className="cst_and">&</span><br />Web Applications That Work.</h1>
+                    <div className="mt-8">
                         <div className="xl:max-w-4xl lg:max-w-3xl sm:border-l border-black lg:ml-10 lg:pl-10 sm:ml-6 sm:pl-6 py-1">
                             <p className="xl:text-lg text-base text-lightgrey sm:text-start text-justify">
-                                I am a <strong>Professional Digital Designer and Front-End Developer.</strong> This website contains design works that I have produced over the past few years. Find various types of design projects such as logo designs, brochure designs, product packaging designs, website designs, and many more.
+                                I'm a <strong>Web Developer specializing</strong> in WordPress, Shopify, Laravel, Next.js, WooCommerce, and Webflow. I build responsive websites, eCommerce stores, custom web applications, and business integrations that are designed to be reliable, scalable, and easy to use. Whether you're looking to launch a new website, improve an existing platform, or build a custom solution, I focus on turning ideas and business requirements into practical digital experiences.
                             </p>
                         </div>
                     </div>
