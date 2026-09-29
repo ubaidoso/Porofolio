@@ -6,6 +6,7 @@ import Google from "../../public/gmail.png";
 import Github from "../../public/github.png";
 import Linkedin from "../../public/linkedin.png";
 import download from '../../public/download.svg'
+import Marquee from './Marquee';
 
 const myConnections = [
     {
@@ -40,7 +41,7 @@ const BannerSection = () => {
                     </div>
                 </div>
             </section>
-            <section className='sm:py-20 py-12 border-b border-lightblack'>
+            <section className='sm:py-20 py-12 border-b border-lightblackk'>
                 <div className="container">
                     <div className="flex md:flex-nowrap flex-wrap md:flex-row flex-col-reverse gap-8 items-center justify-between">
                         <ul className='flex flex-wrap items-center lg:gap-10 gap-7 sm:justify-between justify-center'>
@@ -57,6 +58,7 @@ const BannerSection = () => {
                     </div>
                 </div>
             </section>
+            <Marquee />
         </>
     );
 };

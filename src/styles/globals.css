@@ -300,6 +300,84 @@ header li {
   @apply sm:text-80 text-7xl;
 }
 
+.marquee {
+  --bg: #f5f3ff;
+  --tile: #c4b5fd;
+  --ink: #000000;
+  --gap: 56px;
+  --speed: 32s;
+
+  overflow: hidden;
+  padding: 28px 0;
+  background: var(--bg);
+
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll var(--speed) linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding-right: var(--gap);
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+
+  color: var(--ink);
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+
+.marquee-item svg {
+  width: 48px;
+  height: 48px;
+  flex: none;
+}
+
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+
+  .marquee {
+    overflow-x: auto;
+  }
+}
+
 /* Responsiveness */
 
 @media(max-width:1279px) {
