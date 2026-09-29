@@ -145,9 +145,6 @@ const portfolioData = [
 
 export default function Home() {
 
-
-
-
   return (
     <>
       <Header />

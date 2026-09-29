@@ -3,30 +3,23 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
 import Counter from './Counter';
-import Behance from "../../public/behance.png";
-import Dribble from "../../public/basketball.png";
+import Google from "../../public/gmail.png";
 import Github from "../../public/github.png";
 import Linkedin from "../../public/linkedin.png";
-import Button from './Button';
 
 const myConnections = [
     {
         link: "#",
-        icon: Behance,
-        title: "Behance",
+        icon: Google,
+        title: "Email",
     },
     {
-        link: "#",
-        icon: Dribble,
-        title: "Dribble",
-    },
-    {
-        link: "#",
+        link: "https://github.com/ubaidoso",
         icon: Github,
         title: "Github",
     },
     {
-        link: "#",
+        link: "https://www.linkedin.com/in/ubaid-tahir-65059",
         icon: Linkedin,
         title: "Linkedin",
     },
@@ -68,7 +61,7 @@ const BannerSection = () => {
                                 </li>
                             ))}
                         </ul>
-                        <Button title={'Scroll Down'} link={'#one_step_down'} btnClass={'cst_bg_tran'} icon={true} down={true} />
+                        <Link href='/Ubaid-Updated-CV-2026.pdf' className='cst_fill btn flex gap-2' download>Download My CV <Image src={download} width={20} /> </Link>
                     </div>
                 </div>
             </section>
