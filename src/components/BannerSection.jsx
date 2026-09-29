@@ -6,6 +6,7 @@ import Counter from './Counter';
 import Google from "../../public/gmail.png";
 import Github from "../../public/github.png";
 import Linkedin from "../../public/linkedin.png";
+import download from '../../public/download.svg'
 
 const myConnections = [
     {
@@ -61,7 +62,7 @@ const BannerSection = () => {
                                 </li>
                             ))}
                         </ul>
-                        <Link href='/Ubaid-Updated-CV-2026.pdf' className='cst_fill btn flex gap-2' download>Download My CV <Image src={download} width={20} /> </Link>
+                        <Link href='/Ubaid-Updated-CV-2026.pdf' className='cst_fill btn flex gap-2' download="">Download My CV <Image src={download} width={20} /> </Link>
                     </div>
                 </div>
             </section>
