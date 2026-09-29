@@ -54,22 +54,22 @@ const Loader = () => {
         </svg>
         <ul className='flex sm:gap-4 gap-2 items-center justify-center'>
           <li>
-            <Image src="/html-5.png" width={40} height={40} />
+            <Image src="/html-5.png" width={40} height={40} alt='' />
           </li>
           <li>
-            <Image src="/css-3.png" width={40} height={40} />
+            <Image src="/css-3.png" width={40} height={40} alt='' />
           </li>
           <li>
-            <Image src="/bootstrap.png" width={40} height={40}/>
+            <Image src="/bootstrap.png" width={40} height={40} alt=''/>
           </li>
           <li>
-            <Image src="/wordpress.png" width={40} height={40} className='bg-white rounded-full' />
+            <Image src="/wordpress.png" width={40} height={40} alt='' className='bg-white rounded-full' />
           </li>
           <li>
-            <Image src="/react.png" width={40} height={40} />
+            <Image src="/react.png" width={40} height={40} alt='' />
           </li>
           <li>
-            <Image src="/shopify.png" width={40} height={40} />
+            <Image src="/shopify.png" width={40} height={40} alt='' />
           </li>
         </ul>
       </div>
