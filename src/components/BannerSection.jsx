@@ -36,7 +36,7 @@ const BannerSection = () => {
                     <div className="mt-8">
                         <div className="xl:max-w-4xl lg:max-w-3xl sm:border-l border-black lg:ml-10 lg:pl-10 sm:ml-6 sm:pl-6 py-1">
                             <p className="xl:text-lg text-base text-lightgrey sm:text-start text-justify">
-                                I&apos;m a <strong>Web Developer specializing</strong> in WordPress, Shopify, Laravel, Next.js, WooCommerce, and Webflow. I build responsive websites, eCommerce stores, custom web applications, and business integrations that are designed to be reliable, scalable, and easy to use. Whether you're looking to launch a new website, improve an existing platform, or build a custom solution, I focus on turning ideas and business requirements into practical digital experiences.
+                                I am a <strong>Web Developer specializing</strong> in WordPress, Shopify, Laravel, Next.js, WooCommerce, and Webflow. I build responsive websites, eCommerce stores, custom web applications, and business integrations that are designed to be reliable, scalable, and easy to use. Whether you're looking to launch a new website, improve an existing platform, or build a custom solution, I focus on turning ideas and business requirements into practical digital experiences.
                             </p>
                         </div>
                     </div>
