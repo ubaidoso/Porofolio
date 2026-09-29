@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
-// import Counter from './Counter';
 import Google from "../../public/gmail.png";
 import Github from "../../public/github.png";
 import Linkedin from "../../public/linkedin.png";
