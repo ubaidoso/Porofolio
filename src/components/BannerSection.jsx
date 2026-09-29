@@ -59,6 +59,7 @@ const BannerSection = () => {
                 </div>
             </section>
             <Marquee />
+            
         </>
     );
 };
