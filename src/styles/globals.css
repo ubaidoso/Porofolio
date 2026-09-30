@@ -27,9 +27,8 @@ body {
 /* Typography */
 
 h1 {
-  line-height: 160px !important;
   letter-spacing: -0.045em; 
-  @apply text-lightblack font-medium 2xl:text-112 xl:text-112 sm:text-7xl text-5xl; 
+  @apply text-lightblack font-medium xl:text-7xl lg:text-6xl md:text-5xl text-4xl xl:leading-12 lg:leading-11 md:leading-4rem leading-3.5rem; 
 }
 
 h2 {
@@ -86,7 +85,7 @@ header li {
 /* Banner Section */
 
 .cst_and {
-  @apply border-lightblack rounded-full xl:text-70 sm:text-5xl text-4xl inline-flex items-center justify-center xl:w-105rem sm:w-20 w-16 xl:h-105rem sm:h-20 h-16 pb-1 relative sm:bottom-3 bottom-2 left-4 sm:border-6 border-4;
+  @apply border-lightblack rounded-full xl:text-70 lg:text-5xl md:text-4.5 sm:text-4xl text-4xl sm:inline-flex items-center justify-center xl:w-105rem lg:w-20 md:w-18 w-16 xl:h-105rem lg:h-20 md:h-18 h-16 pb-1 relative sm:bottom-3 bottom-2 left-4 lg:border-6 md:border-5 border-4 hidden;
 }
 
 /* About Section */
@@ -380,24 +379,9 @@ header li {
 
 /* Responsiveness */
 
-@media(max-width:1279px) {
-  h1 {
-    line-height: 100px !important;
-  }
 
-}
-
-@media(max-width:1023px) {
-  h1 {
-    line-height: 90px !important;
-  }
-  
-}
 
 @media(max-width:639px) {
-  h1 {
-    line-height: 65px !important;
-  }
 
   .bg-linear-gradient {
     background-image: linear-gradient(315deg, #785CFF00 45%, #d3caff 0%);
@@ -406,18 +390,7 @@ header li {
 }
 
 @media(max-width:480px) {
-  h1 {
-    font-size: 2.3rem;
-    line-height: 50px !important;
-  }
 
-  .cst_and {
-    bottom: 3px;
-    border-width: 3px;
-    height: 3rem;
-    width: 3rem;
-    font-size: 1.5rem
-  }
 
   .cst_stylish_zero {
     width: 4rem;

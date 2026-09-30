@@ -21,25 +21,34 @@ module.exports = {
       
       },
       fontSize: {
-        "70": '4.375rem',
-        "125": '7.813rem',
+        "70": '3.5rem',
+        "125": '7rem',
         "112": '7rem',
         "28": '1.75rem',
         "80": '5rem',
+        "4.5": '2.7rem',
+      },
+      lineHeight: {
+        "3.5rem": '3.5rem', 
+        "4rem": '4rem', 
+        "11": '5rem',
+        "12": '6.5rem',
       },
       width: {
-        '105rem': '6.563rem',
+        '18': '4.5rem',
+        '105rem': '6rem',
         '46rem': '10.5rem',
         '600px': '37.5rem',
       },
       height: {
-        '105rem': '6.563rem',
-        '105rem': '6.563rem',
+        '18': '4.5rem',
+        '105rem': '6rem',
         '3px': '0.188rem',
       },
       borderWidth: {
         '9': '12px',
         '6': '6px',
+        '5': '5px',
       },
       maxWidth: {
         '1248': '79rem',

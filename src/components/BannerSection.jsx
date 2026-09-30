@@ -31,7 +31,7 @@ const BannerSection = () => {
 
     return (
         <>
-            <section className="cst_banner_section pt-32">
+            <section className="cst_banner_section md:pt-32 pt-20">
                 <div className="container">
                     <h1>I Build Websites <span className="cst_and">&</span><br />Web Applications That Work.</h1>
                     <div className="mt-8">
@@ -44,10 +44,10 @@ const BannerSection = () => {
             <section className='sm:py-20 py-12 border-b border-lightblackk'>
                 <div className="container">
                     <div className="flex md:flex-nowrap flex-wrap md:flex-row flex-col-reverse gap-8 items-center justify-between">
-                        <ul className='flex flex-wrap items-center lg:gap-10 gap-7 sm:justify-between justify-center'>
+                        <ul className='flex flex-wrap items-center gap-7 sm:justify-between justify-center'>
                             {myConnections.map((myConnect, index) => (
                                 <li key={index}>
-                                    <Link href={myConnect.link} className='flex gap-4 items-center uppercase'>
+                                    <Link href={myConnect.link} className='flex gap-2 items-center uppercase'>
                                         <Image src={myConnect.icon} width={18} height={18} alt={myConnect.title} />
                                         {myConnect.title}
                                     </Link>
