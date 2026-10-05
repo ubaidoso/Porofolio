@@ -377,6 +377,10 @@ header li {
   }
 }
 
+article {
+  box-shadow: 0 -10px 20px rgba(165, 145, 242, 0.3)
+}
+
 /* Responsiveness */
 
 

@@ -16,10 +16,10 @@ import Webflow from '../../public/icon_num_02_f.svg';
 import ReactNext from '../../public/icon_num_08_f.svg';
 import CustomTheme from '../../public/icon_num_07_f.svg';
 
-import portfolio1 from '../../public/portfolio-1.jpg';
-import portfolio2 from '../../public/portfolio-2.jpg';
-import portfolio3 from '../../public/screenshot.png';
-import portfolio4 from '../../public/Fundrasing.jpg';
+import portfolio1 from '../../public/project-1-img.png';
+import portfolio2 from '../../public/project-2-img.png';
+import portfolio3 from '../../public/project-3-img.png';
+import portfolio4 from '../../public/project-4-img.png';
 
 const services = [
   {
@@ -113,46 +113,168 @@ const experience = [
 
 const portfolioData = [
   {
-    thumbnail:"",
-    title:"",
-    link:"",
-    tools:"",
-    bgImage:portfolio1,
+    thumbnail: portfolio1,
+    title: "Coordinates",
+    link: "https://shopcoordinates.com/",
+    tools: "Shopify / e-Commerce",
+    bgImage: portfolio1,
+
+    description:
+      "A customised Shopify storefront built around the brand's requirements, with custom Liquid sections with all the controls, responsive layouts, product functionality and third-party app integrations.",
+
+    tags: [
+      "E-Commerce",
+      "Shopify Development",
+      "Theme Customization",
+      "Pre-Order Functionality",
+      "Third-Party App Integrations",
+    ],
   },
 
   {
-    thumbnail:"",
-    title:"",
-    link:"",
-    tools:"",
-    bgImage:portfolio2,
+    thumbnail: portfolio2,
+    title: "M.I.Y Candle Co.",
+    link: "https://miycandleco.com/",
+    tools: "Shopify / e-Commerce",
+    bgImage: portfolio2,
+
+    description:
+      "A customised Shopify storefront with responsive theme development, advanced product functionality and integrations across marketing, CRM, subscriptions, memberships, accounting and workshop management.",
+
+    tags: [
+      "E-opmmerce",
+      "Klaviyo",
+      "POS",
+      "Hubspot",
+      "Wishlist Plus",
+      "AI Automation",
+      "BookThatApp",
+      "PoptinApp",
+      "Shopify Development",
+      "Theme Customization",
+      "QuickBooks Online",
+      "Subscription & Membership",
+    ],
   },
+
   {
-    thumbnail:"",
-    title:"",
-    link:"",
-    tools:"",
-    bgImage:portfolio3,
+    thumbnail: portfolio2,
+    title: "Beautiful Books",
+    link: "https://beautifulbooks.com/",
+    tools: "Shopify / e-Commerce",
+    bgImage: portfolio2,
+
+    description:
+      "A customised Shopify storefront built with tailored theme development, reusable Liquid sections, responsive controls and custom form functionality to create a flexible and user-friendly shopping experience.",
+
+    tags: [
+      "E-opmmerce",
+      "Shopify Storefront Customisation",
+      "Custom Form Integration",
+    ],
   },
+
   {
-    thumbnail:"",
-    title:"",
-    link:"",
-    tools:"",
-    bgImage:portfolio4,
+    thumbnail: portfolio1,
+    title: "HausOfAnabel Black",
+    link: "https://hausofanabelblack.com/",
+    tools: "WordPress Development",
+    bgImage: portfolio1,
+
+    description:
+      "A custom WordPress website developed with Elementor Pro, combining responsive layouts with advanced form handling, analytics tracking, reliable email delivery, and Square API integration.",
+
+    tags: [
+      "Gravity Forms Integration",
+      "Elementor Pro ",
+      "SEO",
+      "Google Analytics",
+      "Google Tag Manager",
+      "Square API Integration",
+
+    ],
   },
-]
+
+  {
+    thumbnail: portfolio1,
+    title: "Midwell",
+    link: "#",
+    tools: "WordPress Development",
+    bgImage: portfolio1,
+
+    description:
+      "A custom WordPress platform built with Elementor Pro and ACF, enhanced with custom PHP functionality, booking and search systems, authentication, memberships, dashboards, live chatbot functionality, and tailored host and travel features.",
+
+    tags: [
+      "PHP",
+      "Theme Development",
+      "Custom Live ChatBox",
+      "Custom Booking Integration",
+      "Advanced Search",
+      "User Authentication",
+      "Custom Dashboard",
+      "Membership & Subscription",
+      "ACF + Elementor Pro"
+    ],
+  },
+
+  {
+    thumbnail: portfolio1,
+    title: "CommunityMFG",
+    link: "https://communitymfg.com/",
+    tools: "WordPress Development",
+    bgImage: portfolio1,
+
+    description:
+      "A custom WordPress and WooCommerce platform built with PHP and ACF, featuring advanced product customisation, custom authentication, quote requests, PDF generation and tailored eCommerce functionality.",
+
+    tags: [
+      "PHP",
+      "Theme Development",
+      "Woocommerce",
+      "Advanced Search",
+      "User Authentication",
+      "Custom Dashboard",
+      "Custom PDF Generation",
+      "ACF + Elementor Pro",
+      "Gravity Forms",
+    ],
+  },
+
+
+  {
+    thumbnail: portfolio4,
+    title: "Safe Generations",
+    link: "https://www.safegenerations.org/",
+    tools: "WordPress Development",
+    bgImage: portfolio4,
+
+    description:
+      "A responsive WordPress website built with Elementor Pro, focused on a clean, accessible and user-friendly experience.",
+
+    tags: [
+      "Performance & UX Optimisation",
+      "Elementor Pro",
+      "SEO",
+      "Google Tag Manager",
+    ],
+  },
+];
 
 export default function Home() {
 
   return (
     <>
       <Header />
+
       <BannerSection />
-      <About />
-      <Services serviceData={services} />
+
+      {/* <About /> */}
+
+      {/* <Services serviceData={services} /> */}
+
       {/* Technologies Skill */}
-      <section className='sm:my-24 my-12'>
+      {/* <section className='sm:my-24 my-12'>
         <div className="container mx-auto py-8">
           <div className="flex flex-wrap justify-between gap-8">
             <div className="space-y-12 sm:first:w-5/12 sm:sticky sm:top-16 sm:self-start">
@@ -170,7 +292,7 @@ export default function Home() {
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <h2 className="font-semibold md:text-2xl text-lg">{skillItem.label}</h2>
-                        {/* <h3 className="font-semibold md:text-2xl text-lg">{skillItem.value}%</h3> */}
+                        <h3 className="font-semibold md:text-2xl text-lg">{skillItem.value}%</h3>
                       </div>
                       <p className="text-base font-light leading-6 text-lightblack">{skillItem.detail}</p>
                     </div>
@@ -181,10 +303,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      
       {/* Portfolio */}
-      <section>
-        <PortfolioSlider portfolio={portfolioData} /> 
+      <section className='py-20'>
+        <div className="container">
+          <div className="w-26rem mb-12">
+            <h2 className="mb-6">Things 1've built</h2>
+            <p>A selection of websites, eCommerce stores, plugins and web applications I've designed, developed and maintained.</p>
+          </div>
+          <PortfolioSlider portfolio={portfolioData} /> 
+        </div>
       </section>
 
       {/* <section>
@@ -192,7 +321,7 @@ export default function Home() {
       </section> */}
 
       {/* My Experiences */}
-      <Experience experienceData={experience} />
+      {/* <Experience experienceData={experience} /> */}
       
       <Footer></Footer>
     </>

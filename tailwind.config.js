@@ -15,9 +15,11 @@ module.exports = {
       },
       colors: {
         'purple': '#d3caff',
+        'darkpurple': '#a591f2',
         'lightblack': '#262729',
         'lightgrey' : '#54575d',
         'dullwhite' : '#dddddd',
+        'lightpurple' : '#ece8ff',
       
       },
       fontSize: {
@@ -36,6 +38,7 @@ module.exports = {
       },
       width: {
         '18': '4.5rem',
+        '26rem': '26rem',
         '105rem': '6rem',
         '46rem': '10.5rem',
         '600px': '37.5rem',
