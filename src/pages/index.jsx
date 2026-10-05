@@ -309,7 +309,7 @@ export default function Home() {
       <section className='py-20'>
         <div className="container">
           <div className="w-26rem mb-12">
-            <h2 className="mb-6">Things 1&apos;ve built</h2>
+            <h2 className="mb-6">Things 1 have built</h2>
             <p>A selection of websites, eCommerce stores, plugins and web applications I've designed, developed and maintained.</p>
           </div>
           <PortfolioSlider portfolio={portfolioData} /> 
